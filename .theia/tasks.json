@@ -16,6 +16,13 @@
 			"command": "mvn --batch-mode --quiet test",
 			"group": "test",
             "problemMatcher": []
+        },
+		{
+			"label": "golden-master diff",
+			"type": "shell",
+			"command": "./diff_golden_master.sh",
+			"group": "test",
+            "problemMatcher": []
 		}
 	]
 }
