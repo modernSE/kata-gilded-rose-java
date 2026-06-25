@@ -14,8 +14,24 @@ public class Item {
         this.quality = quality;
     }
 
-   @Override
-   public String toString() {
+    @Override
+    public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality;
+    }
+
+    void decreaseQuality() {
+        if (quality > 0) {
+            quality = quality - 1;
+        }
+    }
+
+    void increaseQuality() {
+        if (quality < GildedRose.MAX_QUALITY) {
+            quality = quality + 1;
+        }
+    }
+
+    void decreaseSellDate() {
+        sellIn = sellIn - 1;
     }
 }
