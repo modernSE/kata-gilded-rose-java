@@ -2,6 +2,8 @@ package com.gildedrose;
 
 public class Item {
 
+    private static final int MAX_QUALITY = 50;
+
     public String name;
 
     public int sellIn;
@@ -26,7 +28,7 @@ public class Item {
     }
 
     void increaseQuality() {
-        if (quality < GildedRose.MAX_QUALITY) {
+        if (quality < Item.MAX_QUALITY) {
             quality = quality + 1;
         }
     }
