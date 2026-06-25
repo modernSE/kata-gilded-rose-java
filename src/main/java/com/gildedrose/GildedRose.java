@@ -1,7 +1,5 @@
 package com.gildedrose;
 
-import java.util.Set;
-
 class GildedRose {
     static final int MAX_QUALITY = 50;
     private static final String BACKSTAGE_PASSES_TO_A_TAFKAL80ETC_CONCERT = "Backstage passes to a TAFKAL80ETC concert";
@@ -9,7 +7,6 @@ class GildedRose {
     private static final String AGED_BRIE = "Aged Brie";
 
     Item[] items;
-    Set<String> qualityStableItemNames = Set.of();
 
     public GildedRose(Item[] items) {
         this.items = items;
